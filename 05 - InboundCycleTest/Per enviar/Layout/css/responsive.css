@@ -1,0 +1,139 @@
+
+/* media queries */
+html {
+    font-size: 50%;
+}
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .popup .popuptext {
+        font-size: 1.5rem;        
+        padding: 15px 0;
+    }
+}
+@media (max-width: 425px) {
+       
+    h1 {
+        padding: 0;
+        max-width:95%;
+        float: none;
+        text-align: center;
+    }
+
+    .separator{
+        width: 95%;
+        margin-top: 2rem;
+    }
+
+    h2 {
+        max-width: 95%;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .emphasizes{
+        margin: 4rem 2rem 4rem ;
+    }
+
+    aside{
+        margin: 3rem 0 5rem;
+    }
+
+    label {
+        font-size: 1.6rem;
+    }
+
+    label a {
+        font-size: 1.6rem;
+    }
+
+    footer div img {
+        width: 30%;
+    }
+
+    footer ul li {
+        margin: 0;
+   
+        display:flex;
+        align-items: center;
+    }
+    
+    footer ul li a {
+        font-size: 1.1rem;
+        display:flex;
+        align-items: center;
+    }
+
+    small{ 
+        margin-right: 0;
+        font-size: 1.1rem;
+    }
+
+    .linea-vertical{
+        margin:  .3rem .5rem 0 .5rem;   
+    } 
+}
+@media (max-width: 375px) {
+    .ebook {
+        margin: 0;
+    }
+
+    h1{
+        max-width: 100%;
+    }
+
+    .separator{
+        width: 100%;
+    }
+
+    h2 {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    p {
+        max-width: 100%;
+    }
+
+    .emphasizes{
+        font-size: 1.4rem;
+    }
+
+    footer .footer-frame {
+        margin-top: 1rem;
+        text-align: center;
+        padding: 3rem 0;
+        display: block;
+    }
+
+    footer nav {
+       justify-content: center;
+       margin: 2rem 0 1rem;
+    }
+
+    footer ul li a {
+        font-size: 1.2rem;
+    }
+
+    small{ 
+        font-size: 1.2rem;
+    }
+
+    .linea-vertical{
+        margin:  .3rem .5rem 0 .5rem;   
+    } 
+}
+
+@media (max-width: 320px) {
+
+    footer div img {
+        width: 35%;
+    }
+    .emphasizes{
+        font-size: 1.1rem;
+        margin: 3rem 2rem 1rem;
+   }
+}
