@@ -17,11 +17,16 @@ showPopup.addEventListener('click', () => {
 
 });
 
-// window.addEventListener('resize', () => {
-//     const largura = window.innerWidth;
-//     if (largura <= 425) {
-
-//      document.querySelector('#icon-arrow')
-//     }
-// });
+window.addEventListener('resize', function () {
+    let width = window.innerWidth;
+    const arrow = document.querySelector("#icon-arrow");
+    console.log(arrow);
+    console.log(largura);
+    if (width <= 768){
+        arrow.classList.remove('fa-long-arrow-right');
+        arrow.classList.add('fa-long-arrow-down');
+    } else {
+        arrow.classList.add('fa-long-arrow-right')
+    }
+});
 
