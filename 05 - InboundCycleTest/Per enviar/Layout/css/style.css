@@ -256,7 +256,7 @@ div .popup {
     display: flex;
  }
   
-.popup .popuptext {
+.popup .popuptext, .popuptextbad {
     font-family: 'HelveticaNeue','Arial', sans-serif;   
     text-transform: uppercase;
     font-weight: bold;
@@ -274,8 +274,11 @@ div .popup {
     left: 50%;
     margin-left: -80px;
 }
-
-.popup .popuptext::after {
+.popuptextbad{
+    background-color: red ;
+    padding: 8px 1px;
+}
+.popup .popuptext::after , .popuptextbad::after{
     content: "";
     position: absolute;
     top: 100%;
@@ -285,11 +288,14 @@ div .popup {
     border-style: solid;
     border-color: #ED5900 transparent transparent transparent;
 }
+.popuptextbad::after{
+    border-color: red transparent transparent transparent;
+}
 
 .popup .show {
     visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s; 
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s; 
 }
 
 @-webkit-keyframes fadeIn {
@@ -300,4 +306,4 @@ div .popup {
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
-} 
+}

@@ -70,18 +70,18 @@
         <form id="form" action="post">
           <h3>Descargar e-book gratis</h3>
           <fieldset>
-            <input type="text" name="name" placeholder="Nombre">
-            <input type="text" name="surname" placeholder="Apellidos">
-            <input type="email" name="email" placeholder="Email">
+            <input type="text" id="name" name="name" placeholder="Nombre">
+            <input type="text" id="surname" name="surname" placeholder="Apellidos">
+            <input type="email" id="email" name="email" placeholder="Email">
           </fieldset>
           <fieldset>
-            <label><input type="checkbox" name="legal"> Acepto la <a href="#"
+            <label><input type="checkbox" id="legal" name="legal"> Acepto la <a href="#"
                 title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
             <label><input type="checkbox" name="subscription"> Suscríbeme al blog</label>
           </fieldset>
           <!-- Popup -->
           <div class="popup" >
-              <span class="popuptext" id="myPopup">¡Muchas gracias!</span>
+              <p class="popuptext" id="myPopup"></p>
           </div>
           <button type="submit">Descargar</button>
         </form>
